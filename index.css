@@ -1,0 +1,92 @@
+*body {
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 15px;
+}
+
+.sub-heading-desktop {
+    display: none;
+}
+
+.card {
+    background-color: #FFFFFF;
+
+    border-radius: 8px;
+    width: 350px;
+    height: 250px;
+    margin: 15px;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.img-part img {
+
+    display: float;
+    float: right;
+    margin-top: 15px;
+    padding-right: 40px;
+}
+
+
+.main-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* media quires */
+/* breakpoint for extra small device like Iphone SE */
+@media only screen and (max-width: 375px) {
+    .sub-heading-desktop {
+        display: none;
+    }
+
+    .main-box {
+        flex-direction: column;
+    }
+
+
+    .card {
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        height: 270px;
+        margin: 15px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .main-box {
+        flex-direction: column;
+    }
+
+}
+
+
+/* breakpoint for laptop and above device */
+@media only screen and (min-width: 992px) {
+    .sub-heading-mobile {
+        display: none;
+    }
+
+    .sub-heading-desktop {
+        display: block;
+    }
+
+
+}
